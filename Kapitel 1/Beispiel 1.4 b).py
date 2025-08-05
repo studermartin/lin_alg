@@ -11,6 +11,7 @@ Ab = np.array([ [  2,  4,  2, 60],
 print(Ab)
 
 # Accessing elements
+# Remark: Ab[1,3] instead of Ab[1][3]
 print(Ab[1,3])
 
 # Computing the shape of the matrix
@@ -86,5 +87,13 @@ Ab = np.array([ [  2,  4,  2, 60],
                 , dtype=np.float64)  
 for pivot_row in range(0, 2):
     for row in range(pivot_row + 1, 3):
+        Ab[row,:] = Ab[row,:] - Ab[row,pivot_row]/Ab[pivot_row,pivot_row] * Ab[pivot_row,:]
+print(Ab)
+
+# Part 1.5: Shape
+rows = Ab.shape[0]  # number of rows
+cols = Ab.shape[1]  # number of columns
+for pivot_row in range(0, rows-1):
+    for row in range(pivot_row + 1, rows):
         Ab[row,:] = Ab[row,:] - Ab[row,pivot_row]/Ab[pivot_row,pivot_row] * Ab[pivot_row,:]
 print(Ab)
