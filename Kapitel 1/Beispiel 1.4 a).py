@@ -18,4 +18,4 @@ print(f"Number of rows: {rows}, Number of columns: {cols}")
 
 # Slicing the matrix
 print(Ab[1:3])  # Slicing rows 1 to 2 (0-indexed)
-print(Ab(1:))
+print(Ab[1:])

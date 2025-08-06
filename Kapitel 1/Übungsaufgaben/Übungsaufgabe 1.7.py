@@ -31,3 +31,4 @@ b = sp.Matrix([0.70, 0.16, 0.14])
 print(A.solve(b))
 # Erstaunlicherweise eine numerische Lösung ?!
 
+print(A.inv() * b)  # algebraische Lösung
