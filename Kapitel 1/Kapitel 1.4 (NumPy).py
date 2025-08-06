@@ -6,10 +6,8 @@ gl= np.array([[1,1,1,1],
 
 A = gl[:, :-1]  # Coefficient matrix
 b = gl[:, -1]   # Right-hand side vector
-# print(A)
-# print(b)
 
-# print(np.linalg.det(A))
+print(np.linalg.det(A))
+print(np.linalg.solve(A, b))
 print(np.linalg.inv(A)@b)
-
 
