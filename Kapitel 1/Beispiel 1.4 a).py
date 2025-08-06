@@ -15,3 +15,7 @@ print(Ab[1][3])  # Accessing the element in the second row and fourth column
 rows = len(Ab)
 cols = len(Ab[0])
 print(f"Number of rows: {rows}, Number of columns: {cols}")
+
+# Slicing the matrix
+print(Ab[1:3])  # Slicing rows 1 to 2 (0-indexed)
+print(Ab(1:))

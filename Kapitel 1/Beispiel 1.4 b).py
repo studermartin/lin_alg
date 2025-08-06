@@ -19,6 +19,11 @@ print(Ab.shape)
 print(Ab.shape[0])  # number of rows
 print(Ab.shape[1])  # number of columns
 
+# Slicing the matrix
+print(Ab[1:3])  # Slicing rows 1 to 2 (0-indexed)
+print(Ab[1:])   # Slicing rows 1 to end
+print(Ab[:, 1:3])  # Slicing columns 1 to 2 (0-indexed)
+
 """
 Gaussian elimination
 """
