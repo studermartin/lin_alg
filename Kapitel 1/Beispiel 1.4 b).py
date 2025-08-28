@@ -56,7 +56,7 @@ factor = Ab[1,0]/Ab[0,0]
 Ab[1,0:4] = Ab[1,0:4] - factor * Ab[0,0:4]
 print(Ab)
 
-# Shortcut: 0:4 means all columns
+# Shortcut: : means all columns
 # (ii)=(ii)-7/2*(i)
 factor = Ab[1,0]/Ab[0,0]
 Ab[1,:] = Ab[1,:] - factor * Ab[0,:]
