@@ -1,10 +1,9 @@
 import numpy as np
 
-# Beispiel 1.48 resp. 1.52: Reguläre Matrix
+# Beispiel 1.48 a) resp. 1.52: Reguläre Matrix
 A = np.array([[2,4,2],
               [7,6,2],
               [12,22,11]], dtype=np.float64)  
-# b = np.array([2, -7, 9], dtype=np.float64)
 
 
 print(np.linalg.matrix_rank(A))

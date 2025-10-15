@@ -24,6 +24,8 @@ cols = Ab.shape[1]  # number of columns
 
 # Aufgabe 1: Rückwärts-Elimination der -5 an der Stelle [1,2]
 # ---> Hier kommt dein Code
+Ab[1] = Ab[1] + 5 * Ab[2]
+print(Ab)
 
 assert np.isclose(Ab[1,2], 0), "Die -5 an der Stelle [1,2] sollte eliminiert sein."
 
