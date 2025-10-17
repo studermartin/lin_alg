@@ -1,7 +1,14 @@
-import sympy as sp
+import numpy as np
 
-ev = sp.Matrix([[0, 1, 2, 1.5],
+M = np.array([[0, 1, 2, 1.5],
                 [0.5, 0, 0, 0],
-                [0, 0.7, 0, 0   ],
-                [0, 0, 0.6, 0]]).eigenvects()
-print(ev)
+                [0, 0.7, 0, 0],
+                [0, 0, 0.6, 0]], dtype=np.float64)
+eig = np.linalg.eig(M)
+
+# Spektrum
+print("Spektrum:", eig.eigenvalues)
+
+# Eigenvektoren/-räume
+print("Eigenvektoren:", eig.eigenvectors)
+
