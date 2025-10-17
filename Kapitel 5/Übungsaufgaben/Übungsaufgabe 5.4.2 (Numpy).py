@@ -13,7 +13,7 @@ print("Spektrum:", eig.eigenvalues)
 print("Eigenvektoren:", eig.eigenvectors)
 
 # Perron-Frobenius-Eigenvektor normiert
-print(eig.eigenvectors[0])
-print(eig.eigenvectors[0].sum())
-print(eig.eigenvectors[0]/eig.eigenvectors[0].sum())
+print(eig.eigenvectors[:,0])
+print(eig.eigenvectors[:,0].sum())
+print(eig.eigenvectors[:,0]/eig.eigenvectors[:,0].sum())
 

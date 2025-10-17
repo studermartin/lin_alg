@@ -12,7 +12,7 @@ for i in range(10):
 eigenvalue = np.linalg.eig(M)
 print(eigenvalue)
 
-ev1 = eigenvalue.eigenvectors[:0]
+ev1 = eigenvalue.eigenvectors[:,0]
 ev2 = eigenvalue.eigenvectors[:,-1]
 
 ev2 = ev2 / np.sum(ev2)

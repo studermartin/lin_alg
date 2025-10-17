@@ -12,4 +12,6 @@ print("Spektrum:", eig.eigenvalues)
 
 # Eigenvektoren/-räume
 print("Eigenvektoren:", eig.eigenvectors)
+# Achtung: Eigenvektoren sind Zeilenvektoren!
+
 
