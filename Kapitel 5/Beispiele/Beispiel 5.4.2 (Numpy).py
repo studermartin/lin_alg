@@ -14,6 +14,6 @@ print("Eigenvektoren:\n", eig.eigenvectors)
 
 # Perron-Frobenius-Eigenvektor normiert
 print("1. Eigenvektor:\n", eig.eigenvectors[:,0])
-print("Komponentesumme des 1. Eigenvektors:\n", eig.eigenvectors[:,0].sum())
+print("Komponentensumme des 1. Eigenvektors:\n", eig.eigenvectors[:,0].sum())
 print("Normierter 1. Eigenvektor:\n", eig.eigenvectors[:,0]/eig.eigenvectors[:,0].sum())
 
