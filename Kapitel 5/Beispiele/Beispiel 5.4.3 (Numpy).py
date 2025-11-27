@@ -9,10 +9,10 @@ M = np.array([  [ 0 ,1/4, 0 , 1 , 0 , 0 ],
 eig = np.linalg.eig(M)
 
 # Spektrum
-print("Spektrum:", eig.eigenvalues)
+print("Spektrum:\n", eig.eigenvalues)
 
 # Perron-Frobenius-Eigenvektor normiert
-print(eig.eigenvectors[:,0])
-print(eig.eigenvectors[:,0].sum())
-print(eig.eigenvectors[:,0]/eig.eigenvectors[:,0].sum())
+print("1. Eigenvektor:\n", eig.eigenvectors[:,0])
+print("Komponentesumme des 1. Eigenvektors:\n", eig.eigenvectors[:,0].sum())
+print("Normierter 1. Eigenvektor:\n", eig.eigenvectors[:,0]/eig.eigenvectors[:,0].sum())
 
